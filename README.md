@@ -1,0 +1,2 @@
+# GraySocial
+Little social app
