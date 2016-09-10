@@ -7,21 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5C917960A8D07EAECC829B37 /* Pods_GraySocial.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64A9CCE06881CB402F60C179 /* Pods_GraySocial.framework */; };
 		F4ABD2191D84342B0026B371 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4ABD2181D84342B0026B371 /* AppDelegate.swift */; };
-		F4ABD21B1D84342B0026B371 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4ABD21A1D84342B0026B371 /* ViewController.swift */; };
+		F4ABD21B1D84342B0026B371 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4ABD21A1D84342B0026B371 /* SignInViewController.swift */; };
 		F4ABD21E1D84342B0026B371 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4ABD21C1D84342B0026B371 /* Main.storyboard */; };
 		F4ABD2201D84342B0026B371 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4ABD21F1D84342B0026B371 /* Assets.xcassets */; };
 		F4ABD2231D84342B0026B371 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4ABD2211D84342B0026B371 /* LaunchScreen.storyboard */; };
+		F4ABD22B1D8434600026B371 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F4ABD22A1D8434600026B371 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		27F03CF3B213AD303A6AFDB7 /* Pods-GraySocial.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GraySocial.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GraySocial/Pods-GraySocial.debug.xcconfig"; sourceTree = "<group>"; };
+		64A9CCE06881CB402F60C179 /* Pods_GraySocial.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GraySocial.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B03EBC57EAF62B0C099A618B /* Pods-GraySocial.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GraySocial.release.xcconfig"; path = "Pods/Target Support Files/Pods-GraySocial/Pods-GraySocial.release.xcconfig"; sourceTree = "<group>"; };
 		F4ABD2151D84342B0026B371 /* GraySocial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GraySocial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4ABD2181D84342B0026B371 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F4ABD21A1D84342B0026B371 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F4ABD21A1D84342B0026B371 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		F4ABD21D1D84342B0026B371 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F4ABD21F1D84342B0026B371 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F4ABD2221D84342B0026B371 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F4ABD2241D84342B0026B371 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F4ABD22A1D8434600026B371 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +35,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C917960A8D07EAECC829B37 /* Pods_GraySocial.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0220F786C6B4F4E5DBB762A6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				27F03CF3B213AD303A6AFDB7 /* Pods-GraySocial.debug.xcconfig */,
+				B03EBC57EAF62B0C099A618B /* Pods-GraySocial.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		F4ABD20C1D84342B0026B371 = {
 			isa = PBXGroup;
 			children = (
 				F4ABD2171D84342B0026B371 /* GraySocial */,
 				F4ABD2161D84342B0026B371 /* Products */,
+				0220F786C6B4F4E5DBB762A6 /* Pods */,
+				F811E89FCC3E69680C056B2A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,13 +73,22 @@
 			isa = PBXGroup;
 			children = (
 				F4ABD2181D84342B0026B371 /* AppDelegate.swift */,
-				F4ABD21A1D84342B0026B371 /* ViewController.swift */,
+				F4ABD21A1D84342B0026B371 /* SignInViewController.swift */,
 				F4ABD21C1D84342B0026B371 /* Main.storyboard */,
 				F4ABD21F1D84342B0026B371 /* Assets.xcassets */,
 				F4ABD2211D84342B0026B371 /* LaunchScreen.storyboard */,
 				F4ABD2241D84342B0026B371 /* Info.plist */,
+				F4ABD22A1D8434600026B371 /* GoogleService-Info.plist */,
 			);
 			path = GraySocial;
+			sourceTree = "<group>";
+		};
+		F811E89FCC3E69680C056B2A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				64A9CCE06881CB402F60C179 /* Pods_GraySocial.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +98,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F4ABD2271D84342B0026B371 /* Build configuration list for PBXNativeTarget "GraySocial" */;
 			buildPhases = (
+				E1F64133E7DBF615FF71DEEC /* Check Pods Manifest.lock */,
 				F4ABD2111D84342B0026B371 /* Sources */,
 				F4ABD2121D84342B0026B371 /* Frameworks */,
 				F4ABD2131D84342B0026B371 /* Resources */,
+				BDA20A198D6E455C0D94AD7E /* Embed Pods Frameworks */,
+				C3461120E8182057A7C60542 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -125,6 +155,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F4ABD2231D84342B0026B371 /* LaunchScreen.storyboard in Resources */,
+				F4ABD22B1D8434600026B371 /* GoogleService-Info.plist in Resources */,
 				F4ABD2201D84342B0026B371 /* Assets.xcassets in Resources */,
 				F4ABD21E1D84342B0026B371 /* Main.storyboard in Resources */,
 			);
@@ -132,12 +163,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		BDA20A198D6E455C0D94AD7E /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GraySocial/Pods-GraySocial-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C3461120E8182057A7C60542 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GraySocial/Pods-GraySocial-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E1F64133E7DBF615FF71DEEC /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F4ABD2111D84342B0026B371 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F4ABD21B1D84342B0026B371 /* ViewController.swift in Sources */,
+				F4ABD21B1D84342B0026B371 /* SignInViewController.swift in Sources */,
 				F4ABD2191D84342B0026B371 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -182,6 +261,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -204,7 +284,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -231,6 +311,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -247,7 +328,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -257,10 +338,12 @@
 		};
 		F4ABD2281D84342B0026B371 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 27F03CF3B213AD303A6AFDB7 /* Pods-GraySocial.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = G7TV7283LG;
 				INFOPLIST_FILE = GraySocial/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.MLBNP.GraySocial;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -270,10 +353,12 @@
 		};
 		F4ABD2291D84342B0026B371 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B03EBC57EAF62B0C099A618B /* Pods-GraySocial.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = G7TV7283LG;
 				INFOPLIST_FILE = GraySocial/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.MLBNP.GraySocial;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -300,6 +385,7 @@
 				F4ABD2291D84342B0026B371 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
